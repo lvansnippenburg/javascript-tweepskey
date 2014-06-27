@@ -1,0 +1,354 @@
+/* reset */
+/* 
+html5doctor.com Reset Stylesheet
+v1.4.1 
+2010-03-01
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* HTML 5 */
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* kleuren 
+#008DBB
+#00ACD6
+#ADE1F9
+*/
+
+body {
+	-x-system-font:none;
+	background-color: #333;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,button, select, option {
+	font-family: sans-serif;
+	color: #333;
+	font-size: 1em;
+	line-height: 1.3;
+}
+
+div {
+
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #00ACD6;
+	padding-bottom: 0.8em;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #00ACD6;
+	padding-bottom: 0em;
+}
+
+p {
+	padding-bottom: 0.8em;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #008DBB;
+	cursor: pointer;
+}
+
+.semibutton {
+	width: 174px;
+	text-align: center;
+	font-weight: bold;
+	
+	color: #00ACD6;
+	background-color: #FFFFFF;
+	filter:alpha(opacity=60);
+	background-color: rgba(255,255,255,0.2);
+	
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin: 4px;
+	
+	-moz-border-radius: 0.2em;
+	-webkit-border-radius: 0.2em;
+	
+	cursor: pointer;
+}
+
+.semibutton:hover, .active {
+	filter:alpha(opacity=99);
+	background-color: rgba(255,255,255,0.8);
+}
+
+input {
+	border: none;
+	background-color: transparent;
+	border-bottom: 0.1em dotted #00ACD6;
+	color: #00ACD6;
+	font-weight: bold;
+}
+
+/* basis indeling van scherm */
+#left {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 189px;
+	max-width: 189px;
+	text-align: center;
+}
+
+#left nav {
+	width: 189px;
+	max-width: 189px;
+	text-align: center;
+}
+
+#unlockinfo {
+	position: absolute;
+	left: 190px;
+	top: 0.8em;
+}
+
+#tagcloud {
+	position: absolute;
+	left: 190px;
+	top: 2.4em;
+	right: 1em;
+	bottom: 2em;
+	min-width: 35em;
+}
+
+#status {
+	font-size: 0.8em;
+	padding: 0.4em;
+	
+}
+
+#ad {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 12.5em;
+	max-width: 12em;
+	text-align: center;
+}
+
+/* classes voor opmaak */
+.dialog {
+	position: relative !important;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50%;
+	background-color: #FFF;
+	filter:alpha(opacity=99);
+	background-color: rgba(255,255,255,0.8);
+	text-align: center;
+	font-size: 0.8em;
+	padding: 1em;
+	border: 0.1em solid white;
+	-moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	z-index: 9000;
+}
+
+#credits p {
+	text-align: left;
+}
+
+.small {
+	font-size: 0.7em;
+	color: #00ACD6;
+}
+
+.flr {
+	float: right;
+	padding-left: 0.2em;
+}
+
+.center {
+	text-align: center;
+}
+
+/* Tweep Info blokken */
+#userinfo {
+	margin: 4px;
+	padding: 4px;
+	width: 160px;
+	max-width: 160px;
+	border: 0.1em solid white;
+	-moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	font-size: 0.7em;
+}
+
+#unlockinfo p, #userinfo p {
+	color: grey;
+	padding-bottom: 0;
+	text-align: left;
+}
+
+#unlockinfo p.center, #userinfo p.center {
+	width: 100%;
+	text-align: center;
+	margin: 4px;
+}
+
+#unlockinfo span, #userinfo span {
+	color: white;
+}
+
+#unlockinfo img, #userinfo img {
+	padding-left: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	max-width: 34px;
+	max-height: 34px;
+}
+
+#userinfo {
+	background-color: #FFF;
+	filter:alpha(opacity=99);
+	background-color: rgba(255,255,255,0.9);
+	border: 0.1em solid white;
+}
+
+#userinfo span {
+	color: #2b2b2b;
+}
+
+/* twitter block */
+#twitter_update_list {
+	margin-top: 4px;
+	text-align: center;
+}
+
+#twitter_update_list ul {
+	list-style:none;
+	text-align: center;
+}
+
+#twitter_update_list li {
+	list-style:none;
+	color: #ADE1F9;
+	font-size: 0.75em;
+	padding-top: 0.3em;
+	width: 170px;
+	max-width: 170px;
+	margin-left: 7px;
+	margin-right: 6px;
+	text-align: center;
+	border-bottom: 0.1em dotted #ADE1F9;
+}
+
+#twitter_update_list a {
+	color: #00ACD6;
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
