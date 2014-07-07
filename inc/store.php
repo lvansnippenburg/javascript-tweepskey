@@ -8,8 +8,8 @@
 // $Date:  $ 
 // $Revision:  $
 ///////////////////////////////////////////
-define('__accessKeyId__','04BBTBV1WSAVN7N6GX82');
-define('__secretAccessKey__','hCLVezJ7XU6MqE8NLXGV+3qx3sU/pHqOr0baAuCw');
+define('__accessKeyId__','');
+define('__secretAccessKey__','');
 define('__bucketname__','storage.tweepskey.com');
 require_once("s3.class.php");
 
