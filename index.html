@@ -8,10 +8,10 @@
 		<!--[if IE]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link type="text/css" href="main.min.css" rel="stylesheet" />
+		<link type="text/css" href="css/main.css" rel="stylesheet" />
 	</head>
 	<body>
-		<span id="oneforty.i.2621"  > </span>
+		<! -- <span id="oneforty.i.2621"  > </span> -->
 		<div id="left">
 			<p><img src="images/tweepskey_logo.png" alt="tweepskey logo" width="50%" /></p>
 			<nav>
@@ -27,17 +27,18 @@
 			<a href="http://twitter.com/TweepsKey" target="_tw">Follow us on Twitter</a>
 			<ul id="twitter_update_list"></ul>
 		</div>
+		<!--
 		<div id="ad">
 			<span class="small">We also created</span>
 			<a href="http://www.2smic.com" id="smicadv"><img src="images/SMIC2_MQ.png" width="160px"></a>
 		</div>
-		
+		-->
 		<div id="unlockinfo" style="display:none;" >
 			<p>Graph&nbsp;for:&nbsp;<span id="Tscreenname"></span>&nbsp;<span class="small">Followers:&nbsp;<span id="Tfollowers"></span>&nbsp;&bull;&nbsp;Following:&nbsp;<span id="Tfollowing"></span>&nbsp;&bull;&nbsp;Tweets:&nbsp;<span id="Ttweets"></span>&nbsp;<a href="" id="Ttwitter" target="_tw">&bull;&nbsp;See Tweep on Twitter</a>&nbsp;<a href="" id="Tweb" target="_tw" style="display:none;">&bull;&nbsp;Visit Tweep's website</a>&nbsp;&bull;&nbsp;Find in Graph:&nbsp;<input type="text" value="" id="fig" /></span></p>
 		</div>
-		
+
 		<div id="tagcloud"> </div>
-		
+
 		<article id="userinfo" style="display:none;" >
 			<p><span id="Uscreenname" style="font-weight: bold;"></span></p>
 			<p>Real&nbsp;name:&nbsp;<span id="Urealname"></span></p>
@@ -51,7 +52,7 @@
 			<p class="small center"><a href="" id="Uunlock">Unlock Tweep</a></p>
 			<p class="small center" id="isprot" style="display:none;">Protected Tweep</p>
 		</article>
-		
+
 		<article class="dialog" id="newTweep" style="display:none;">
 			<h1>Unlock the Power of Your Tweeps</h1>
 			<p>TweepsKey visualizes the importance of your Tweeps (followers in Twitter). Using the Twitter API and some math you can see who is important and who is just another follower.</p>
@@ -60,7 +61,7 @@
 			<p class="small">This application is optimized for Safari, Chrome &amp; Firefox. It will work in Internet Explorer with some limitations.</p>
 			<p class="small">When you are trying to retrieve information about a Tweep that is protected you will be asked for authentication through a standard dialog. The information you enter will only be transmitted to the Twitter API and nowhere else.</p>
 		</article>
-		
+
 		<article class="dialog" id="whatyousee" style="display: none;">
 			<h1>How to read the graph</h1>
 			<h2>Basics</h2>
@@ -73,13 +74,13 @@
 			<p>The size of the dots indicate the amount of followers for each follower. The bigger the dot is the more followers. Again on a logarithmic scale.</p>
 			<h2>The color of the dots</h2>
 			<p><span style="float: left;"><img src="images/blue.png" ></span><span class="flr"><img src="images/green.png" ></span>Colors of the dots range from light-blue to green. The color is defined by the ratio followers/friends.</p>
-			
+
 			<h2>The <span style="color: red;">Red</span> dot</h2>
 			<p>Is the Tweep you are unlocking.</p>
 			<h2>Read the FAQ</h2>
 			<p>If you want to learn more.</p>
 		</article>
-		
+
 		<article class="dialog" id="help" style="display: none;">
 			<h1>Some help</h1>
 			<h2>Tip 1:</h2>
@@ -89,14 +90,14 @@
 			<h2>Tip 3:</h2>
 			<p>If you feel all these dots are a bit small: get a bigger screen!</p>
 		</article>
-		
+
 		<article class="dialog" id="aboutprivacy" style="display: none;">
 			<h1>Our view on privacy</h1>
 			<p>Your business is not our business. This web-application works entirely on your machine. We do not ask for passwords, nor do we store any information on our servers.</p>
 			<p>Since the application is not authenticated with the Twitter API it cannot retrieve information about Tweeps that have protected their tweets. This could be considered a fault or a feature.</p>
 			<p>When you are trying to retrieve information about a Tweep that is protected you will be asked for authentication through a standard dialog. The information you enter will only be transmitted to the Twitter API and nowhere else.</p>
 		</article>
-		
+
 		<article class="dialog" id="faq" style="display: none;">
 			<h1>FAQ</h1>
 			<h2>IS this only fun or can we really use this?</h2>
@@ -108,9 +109,9 @@
 			<p>Probably not. When drawing the graph we cannot put two dots in the same place (one might not be visible/selectable). In that case the second dot will be moved to the next available position. The movement is done along a random angle. Therefore sometimes you can see funny things. Try to unlock the same Tweep again on a larger screen (you could even try to "zoom out" your browser).</p>
 			<h2>How can we contact you</h2>
 			<p>Follow us on Twitter (<a href="http://twitter.com/tweepskey" target = "_nw">@TweepsKey</a>), then send a mention or direct message.</p>
-			
+
 		</article>
-		
+
 		<article class="dialog" id="credits" style="display: none;">
 			<h1>Credits</h1>
 			<p ><a href="#">People</a></p>
@@ -124,23 +125,23 @@
 				<span class="flr"><a target="_nw" href="http://twitter.com/vrozat"><img src="images/vrozat.png" ></a></span>
 				Another Leo van Snippenburg (<a href="http://twitter.com/vrozat" target = "_nw">@vrozat</a>) was needed to freshen-up our memory on math and statistics. Though we cannot give any warranties about the correctness of the statistics applied  in TweepsKey we are sure there would have been no statistics without his help.
 			</p>
-			
-			<!-- prototype -->	
+
+			<!-- prototype -->
 			<p ><a target="_pl" href="http://www.prototypejs.org">Prototype.js</a></p>
 			<p >
 				<span class="flr"><a target="_pl" href="http://www.prototypejs.org"><img src="images/prototype.png" ></a></span>
 				Prototype is a JavaScript Framework that aims to ease development of dynamic web applications. Featuring a unique, easy-to-use toolkit for class-driven development and the nicest Ajax library around, Prototype is quickly becoming the codebase of choice for web application developers everywhere.</p>
 			<p class="small">&copy;&nbsp;<a target="_pl" href="http://www.prototypejs.org">Prototype Core Team</a>, Licenses:
 <a rel="license" target="_pl" href="http://dev.rubyonrails.org/browser/spinoffs/prototype/trunk/LICENSE?format=raw">MIT (source code)</a> and <a rel="license" target="_pl" href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a></p>
-			<!-- Raphaël -->		
+			<!-- Raphaël -->
 			<p ><a target="_rw" href="http://raphaeljs.com/">Rapha&euml;l.js</a></p>
 			<p >
 				<span class="flr"><a target="_rw" href="http://raphaeljs.com/"><img src="images/raphael.png"></a></span>
-				Rapha&euml;l is a small JavaScript library that should simplify your work with vector graphics on the web. 
+				Rapha&euml;l is a small JavaScript library that should simplify your work with vector graphics on the web.
 Rapha&euml;l uses the SVG W3C Recommendation and VML as a base for creating graphics.The goal is to provide an adapter that will make drawing vector art compatible cross-browser and easy. Rapha&euml;l currently supports Firefox 3.0+, Safari 3.0+, Opera 9.5+ and Internet Explorer 6.0+.</p>
 			<p class="small">&copy;&nbsp;<a target="_rw" href="http://www.opensource.org/licenses/mit-license.php">Some Rights Reserved</a> by <a target="_rw" href="http://dmitry.baranovskiy.com/">Dmitry Baranovskiy</a></p>
 		</article>
-		
+
 		<article class="dialog" id="status" style="display: none;">
 			<p id="extramsg"></p>
 			<p><img src="images/spinner.gif"></p>
@@ -148,29 +149,18 @@ Rapha&euml;l uses the SVG W3C Recommendation and VML as a base for creating grap
 			<p>API calls made: <span id="apicalls"></span></p>
 			<p>Twitter allows max. 150 API calls per hour</p>
 		</article>
-		
+
 		<article class="dialog" id="twitterError" style="display: none;">
 			<p>The application did not receive a valid response from Twitter.</p>
 			<p id="errormsg"></p>
 			<p><a href="#" id="retry">Click here to try again</a></p>
 			<p><a href="#" id="show">Click here to show the results retrieved</a></p>
 		</article>
-		
+
 		<footer>
 			<p>Copyright &copy;2010 L. van Snippenburg</p>
 		</footer>
-		<script type="text/javascript" src="app.min.js"> </script> 
+		<script type="text/javascript" src="app.js"> </script>
 		
-		<script type="text/javascript">
-			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-			</script>
-			<script type="text/javascript">
-			try {
-				var pageTracker = _gat._getTracker("UA-981256-14");
-				pageTracker._setDomainName(".tweepskey.com");
-				pageTracker._trackPageview();
-			} catch(err) {}
-		</script>
 	</body>
 </html>

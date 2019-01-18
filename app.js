@@ -5906,13 +5906,14 @@ var worker = false;
 /* code to run to initialize everything */
 Event.observe(window, 'load', function() {
 
-	var url = "http://twitter.com/statuses/user_timeline/tweepskey.json";
+	var url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
 	new Ajax.JSONRequest(url, {
 			method: 'get',
 			callbackParamName: "jsonp",
 			parameters: {
 					callback: "twitterCallback2",
-					count: "3"
+					count: "3",
+					screen_name: "lvsnippenburg"
 				}
 		});
 
@@ -5972,9 +5973,7 @@ Event.observe(window, 'load', function() {
 	} else if (navigator.language) {
 		var language = navigator.language.toLowerCase() ; // Gecko
 	}
-	if (language.substr(0,2) == 'nl') {
-		$('smicadv').href = "http://www.2smic.nl";
-	}
+
 
 	NewSearch();
 
